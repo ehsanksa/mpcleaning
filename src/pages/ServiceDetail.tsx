@@ -33,37 +33,37 @@ const ServiceDetail = () => {
       <Header />
       <main>
         {/* Hero */}
-        <section className="py-12 md:py-20 bg-gradient-hero">
-          <div className="container mx-auto px-4">
+        <section className="py-10 sm:py-12 md:py-20 bg-gradient-hero">
+          <div className="container mx-auto px-4 sm:px-5">
             <Link to="/services" className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium mb-6 transition-colors">
               <ArrowLeft className={`w-4 h-4 ${isRTL ? "rotate-180" : ""}`} />
               {t("Back to Services", "العودة للخدمات")}
             </Link>
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-16 h-16 rounded-2xl bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center">
-                <service.icon className="w-8 h-8 text-primary-foreground" />
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-4">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center shrink-0">
+                <service.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary-foreground" />
               </div>
-              <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary-foreground">
                 {t(service.title.en, service.title.ar)}
               </h1>
             </div>
-            <p className="text-lg text-primary-foreground/80 max-w-2xl">
+            <p className="text-base sm:text-lg text-primary-foreground/80 max-w-2xl">
               {t(service.shortDesc.en, service.shortDesc.ar)}
             </p>
           </div>
         </section>
 
         {/* Content */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="py-12 sm:py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4 sm:px-5">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {/* Main Content */}
               <div className="lg:col-span-2 space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-foreground mb-4">
+                  <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4">
                     {t("Service Description", "وصف الخدمة")}
                   </h2>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
+                  <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
                     {t(service.description.en, service.description.ar)}
                   </p>
                 </div>
@@ -82,7 +82,7 @@ const ServiceDetail = () => {
                   </div>
                 </div>
 
-                <div className="p-6 rounded-2xl bg-muted">
+                <div className="p-4 sm:p-6 rounded-2xl bg-muted">
                   <p className="text-muted-foreground leading-relaxed">
                     {t(service.seoContent.en, service.seoContent.ar)}
                   </p>

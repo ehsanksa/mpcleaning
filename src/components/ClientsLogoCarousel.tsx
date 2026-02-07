@@ -51,14 +51,14 @@ const ClientsLogoCarousel = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-muted/50">
-      <div className="container mx-auto px-4">
+    <section className="py-12 sm:py-16 md:py-24 bg-muted/50">
+      <div className="container mx-auto px-4 sm:px-5">
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold mb-4">
             {t("Trusted By", "موثوق من قبل")}
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground">
             {t("Our Valued Clients", "عملاؤنا الموثوقون")}
           </h2>
         </div>
@@ -74,8 +74,8 @@ const ClientsLogoCarousel = () => {
         >
           <CarouselContent>
             {clientLogos.map((logo, index) => (
-              <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex items-center justify-center">
-                <div className="w-full h-32 flex items-center justify-center p-4">
+              <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 flex items-center justify-center">
+                <div className="w-full h-24 sm:h-28 md:h-32 flex items-center justify-center p-2 sm:p-4">
                   <img
                     src={logo}
                     alt={`Client logo ${index + 1}`}

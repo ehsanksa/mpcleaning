@@ -47,7 +47,7 @@ const About = () => {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden py-16 md:py-20">
+        <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 min-h-[40vh] sm:min-h-[45vh] flex flex-col justify-center">
           <div className="absolute inset-0 z-0">
             <img
               src="/hero-carousel/about-us.avif"
@@ -58,10 +58,10 @@ const About = () => {
             <div className="absolute inset-0 bg-foreground/60" />
           </div>
           <div className="relative z-10 container mx-auto px-4 text-center">
-            <h1 className="text-3xl md:text-5xl font-extrabold text-background mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-background mb-4">
               {t("About MASARATH PARVEEN", "عن مسارات بارفين")}
             </h1>
-            <p className="text-lg text-background/80 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-background/80 max-w-2xl mx-auto px-2">
               {t(
                 "Your trusted cleaning partner in Dubai since over a decade",
                 "شريكك الموثوق في التنظيف في دبي منذ أكثر من عقد"
@@ -71,16 +71,16 @@ const About = () => {
         </section>
 
         {/* Story */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="py-12 sm:py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4 sm:px-5">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <span className="inline-block px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold mb-4">
                 {t("Our Story", "قصتنا")}
               </span>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6">
                 {t("A Decade of Excellence in Dubai", "عقد من التميز في دبي")}
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-6">
                 {t(
                   "MASARATH PARVEEN Cleaning Services L.L.C. was founded with a simple mission: to provide Dubai residents and businesses with the highest quality cleaning services at fair prices. Based in Karama, we've grown from a small team to one of the most trusted names in professional cleaning across Dubai.",
                   "تأسست شركة مسارات بارفين لخدمات التنظيف ذ.م.م بمهمة بسيطة: تقديم أعلى جودة لخدمات التنظيف لسكان ومؤسسات دبي بأسعار عادلة. من مقرنا في كرامة، نمونا من فريق صغير إلى واحد من أكثر الأسماء موثوقية في التنظيف المحترف في دبي."

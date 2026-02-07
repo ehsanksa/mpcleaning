@@ -8,16 +8,16 @@ const ServicesOverview = () => {
   const { t, isRTL } = useLanguage();
 
   return (
-    <section className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="py-12 sm:py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-5">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold mb-4">
             {t("Our Services", "خدماتنا")}
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
             {t("Complete Cleaning Solutions", "حلول تنظيف شاملة")}
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             {t(
               "Professional cleaning services tailored for Dubai homes and businesses",
               "خدمات تنظيف احترافية مصممة خصيصًا للمنازل والمؤسسات في دبي"
@@ -30,7 +30,7 @@ const ServicesOverview = () => {
             <Link
               key={service.slug}
               to={`/services/${service.slug}`}
-              className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-elevated transition-all duration-300 animate-slide-up"
+              className="group p-4 sm:p-6 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-elevated transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">

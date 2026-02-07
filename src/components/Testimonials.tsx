@@ -6,16 +6,16 @@ const Testimonials = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16 md:py-24 bg-muted">
-      <div className="container mx-auto px-4">
+    <section className="py-12 sm:py-16 md:py-24 bg-muted">
+      <div className="container mx-auto px-4 sm:px-5">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="inline-block px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-semibold mb-4">
             {t("Testimonials", "آراء العملاء")}
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4">
             {t("Trusted by Dubai Families", "موثوقة من عائلات دبي")}
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             {t(
               "See what our satisfied customers have to say about our services",
               "اطلع على آراء عملائنا الراضين عن خدماتنا"
@@ -27,7 +27,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="p-6 rounded-2xl bg-card shadow-card animate-slide-up"
+              className="p-4 sm:p-6 rounded-2xl bg-card shadow-card animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex gap-0.5 mb-3">

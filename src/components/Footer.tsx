@@ -7,12 +7,12 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-foreground text-background">
-      <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+    <footer className="bg-foreground text-background pb-[env(safe-area-inset-bottom)]">
+      <div className="container mx-auto px-4 sm:px-5 py-10 sm:py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
-          <div className="space-y-4">
-            <img src={logo} alt="MASARATH PARVEEN Cleaning Services" className="h-16 w-auto brightness-0 invert" />
+          <div className="space-y-4 sm:col-span-2 lg:col-span-1">
+            <img src={logo} alt="MASARATH PARVEEN Cleaning Services" className="h-12 sm:h-16 w-auto brightness-0 invert" />
             <h3 className="font-bold text-lg text-background">MP Cleaning Services LLC</h3>
             <p className="text-sm opacity-70 leading-relaxed">
               {t(
@@ -55,7 +55,7 @@ const Footer = () => {
                 <Phone className="w-4 h-4 shrink-0" />
                 <span>+971 58 672 2428</span>
               </a>
-              <a href="mailto:info@mpforyoucleaning.com" className="flex items-center gap-2 text-sm opacity-70 hover:opacity-100 transition-opacity">
+              <a href="mailto:info@mpforyoucleaning.com" className="flex items-center gap-2 text-sm opacity-70 hover:opacity-100 transition-opacity break-all">
                 <Mail className="w-4 h-4 shrink-0" />
                 <span>info@mpforyoucleaning.com</span>
               </a>

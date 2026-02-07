@@ -70,8 +70,8 @@ const BookingForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 p-6 md:p-8 rounded-2xl bg-card shadow-card">
-      <h3 className="text-xl font-bold text-foreground mb-2">
+    <form onSubmit={handleSubmit} className="space-y-4 p-4 sm:p-6 md:p-8 rounded-2xl bg-card shadow-card">
+      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2">
         {t("Get a Free Quote", "احصل على عرض مجاني")}
       </h3>
       <p className="text-sm text-muted-foreground mb-4">

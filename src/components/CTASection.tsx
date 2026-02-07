@@ -7,12 +7,12 @@ const CTASection = () => {
   const { t, isRTL } = useLanguage();
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-hero">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
+    <section className="py-12 sm:py-16 md:py-24 bg-gradient-hero">
+      <div className="container mx-auto px-4 sm:px-5 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
           {t("Ready for a Spotless Space?", "مستعد لمكان نظيف تمامًا؟")}
         </h2>
-        <p className="text-lg text-primary-foreground/80 max-w-xl mx-auto mb-8">
+        <p className="text-base sm:text-lg text-primary-foreground/80 max-w-xl mx-auto mb-6 sm:mb-8">
           {t(
             "Get your free quote today. Our team is ready to make your home or office shine!",
             "احصل على عرضك المجاني اليوم. فريقنا جاهز لجعل منزلك أو مكتبك يلمع!"
