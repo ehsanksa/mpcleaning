@@ -23,11 +23,7 @@ const Hero = () => {
     "/hero-carousel/carousel-8.jpg",
     "/hero-carousel/carousel-9.jpg",
     "/hero-carousel/carousel-10.jpg",
-    "/hero-carousel/carousel-34.jpg",
-    "/hero-carousel/carpet-cleaning.jpg",
-    "/hero-carousel/water-tank-cleaning-services.jpg",
-    "/hero-carousel/window-cleaning.jpg",
-    "/hero-carousel/Water-Tank-Repair-Services-in-Dubai.jpg",
+    "/hero-carousel/carousel-34.jpg",  
   ];
 
   const stats = [
@@ -37,21 +33,21 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden">
-      {/* Hero Background Carousel */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative overflow-hidden min-h-[85vh] md:min-h-[80vh]">
+      {/* Hero Background Carousel - uses min-h-full to fill section on all viewports */}
+      <div className="absolute inset-0 z-0 min-h-full">
         <Carousel
           opts={{ loop: true }}
           plugins={[plugin.current]}
-          className="w-full h-full"
+          className="w-full h-full min-h-full"
         >
-          <CarouselContent className="h-full">
+          <CarouselContent className="h-full min-h-full">
             {heroImages.map((image, index) => (
-              <CarouselItem key={index} className="h-full">
+              <CarouselItem key={index} className="h-full min-h-full">
                 <img
                   src={image}
                   alt={`Professional cleaning services carousel ${index + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full min-h-full object-cover object-center"
                   loading={index === 0 ? "eager" : "lazy"}
                 />
               </CarouselItem>
@@ -60,10 +56,11 @@ const Hero = () => {
           {/* <CarouselPrevious className="left-4 right-auto" />
           <CarouselNext className="right-4 left-auto" /> */}
         </Carousel>
-        <div className="absolute inset-0 bg-foreground/60" />
+        {/* Overlay - positioned to cover entire background, responsive across all viewports */}
+        <div className="absolute inset-0 min-h-full bg-foreground/60" aria-hidden />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 lg:py-32">
+      <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 lg:py-32 min-h-[85vh] md:min-h-[80vh]">
         <div className="max-w-2xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 text-primary-foreground text-sm font-medium mb-6 animate-fade-in">
