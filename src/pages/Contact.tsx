@@ -27,7 +27,7 @@ const Contact = () => {
       title: t("Location", "الموقع"),
       lines: [
         {
-          text: t("Karama, Dubai – UAE", "كرامة، دبي – الإمارات"),
+          text: t("DIC, Dubai – UAE", "كرامة، دبي – الإمارات"),
           href: "https://www.google.com/maps?q=24.853624277933754,55.06210327537066",
         },
       ],

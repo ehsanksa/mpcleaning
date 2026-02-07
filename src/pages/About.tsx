@@ -82,7 +82,7 @@ const About = () => {
               </h2>
               <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-6">
                 {t(
-                  "MASARATH PARVEEN Cleaning Services L.L.C. was founded with a simple mission: to provide Dubai residents and businesses with the highest quality cleaning services at fair prices. Based in Karama, we've grown from a small team to one of the most trusted names in professional cleaning across Dubai.",
+                  "MASARATH PARVEEN Cleaning Services L.L.C. was founded with a simple mission: to provide Dubai residents and businesses with the highest quality cleaning services at fair prices. Based in DIC, we've grown from a small team to one of the most trusted names in professional cleaning across Dubai.",
                   "تأسست شركة مسارات بارفين لخدمات التنظيف ذ.م.م بمهمة بسيطة: تقديم أعلى جودة لخدمات التنظيف لسكان ومؤسسات دبي بأسعار عادلة. من مقرنا في كرامة، نمونا من فريق صغير إلى واحد من أكثر الأسماء موثوقية في التنظيف المحترف في دبي."
                 )}
               </p>

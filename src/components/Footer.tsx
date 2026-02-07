@@ -61,7 +61,7 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-2 text-sm opacity-70">
                 <MapPin className="w-4 h-4 shrink-0" />
-                <span>{t("Karama, Dubai – UAE", "كرامة، دبي – الإمارات")}</span>
+                <span>{t("DIC, Dubai – UAE", "كرامة، دبي – الإمارات")}</span>
               </div>
             </div>
           </div>

@@ -344,7 +344,7 @@ const QR = () => {
                 </div>
                 <h3 className="font-bold text-lg mb-3 text-white">Our Office</h3>
                 <p className="text-white/90">
-                  Karama, Dubai
+                  DIC, Dubai
                   <br />
                   U.A.E
                 </p>
